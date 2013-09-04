@@ -18,3 +18,9 @@ Fractals in JavaScript using HTML5 Canvas
 
 ![ScreenShot](http://3.bp.blogspot.com/-MRpj9CMUqbI/UiTvl2huStI/AAAAAAAAAUg/_WOTazmcagM/s1600/bs2.png "Visualization of the Burning Ship fractal")
 
+4) Visualization of the Sierpinski carpet fractal
+
+![ScreenShot](http://2.bp.blogspot.com/-3UlQQw_TuMY/UiebNUJGGMI/AAAAAAAAAUw/vsr3UwOE9Rc/s1600/sc1.png "Visualization of the Sierpinski carpet fractal")
+
+
+
