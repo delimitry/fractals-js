@@ -25,6 +25,8 @@ function render() {
 	//drawJulia();
 	// visualize Burning Ship fractal
 	//drawBurningShipFractal();
+	// draw Sierpinski carpet
+	//drawSierpinskiCarpet();
 }
 
 function drawMandelbrot() {
@@ -135,4 +137,37 @@ function drawBurningShipFractal() {
 
 	// draw image
 	context.putImageData(image_data, 0, 0);
+}
+
+function drawSierpinskiCarpet() {
+	// draw carpet
+	var draw_carpet = function (x, y, width, height, iteration) {
+		if (iteration == 0) return;
+		var w = width / 3;
+		var h = height / 3;
+
+		// draw subsquare
+		context.fillStyle = 'rgb(255,255,255)';
+		context.fillRect(x + w, y + h, w, h);
+
+		// draw subcarpets
+		for (var i = 0; i < 3; i++) {
+			for (var j = 0; j < 3; j++) {
+				// remove central subsquare
+				if (j == 1 && i == 1) continue;
+				draw_carpet(x + j * w, y + i * h, w, h, iteration - 1);
+			}
+		}
+	}
+
+	// init carpet size		
+	var carpet_width = canvas.height;
+	var carpet_height = canvas.height;
+	// align to the center
+	var carpet_left = (canvas.width - carpet_width) / 2;
+	// limit the depth of recursion
+	var max_iterations = 4;
+
+	// draw Sierpinski carpet
+	draw_carpet(carpet_left, 0, carpet_width, carpet_height, max_iterations);
 }
