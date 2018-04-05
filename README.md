@@ -1,9 +1,10 @@
 fractals-js
 ===========
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/delimitry/ascii_canvas/blob/master/LICENSE)
 
 Fractals in JavaScript using HTML5 Canvas
 
-###Fractals Visualizations
+### Fractals Visualizations
 
 1) Visualization of the Mandelbrot Set
 
@@ -22,5 +23,6 @@ Fractals in JavaScript using HTML5 Canvas
 
 ![ScreenShot](http://2.bp.blogspot.com/-3UlQQw_TuMY/UiebNUJGGMI/AAAAAAAAAUw/vsr3UwOE9Rc/s1600/sc1.png "Visualization of the Sierpinski carpet fractal")
 
-
-
+License:
+--------
+Released under [The MIT License](https://github.com/delimitry/fractals-js/blob/master/LICENSE).
